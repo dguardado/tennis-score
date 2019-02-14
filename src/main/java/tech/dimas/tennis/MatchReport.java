@@ -33,12 +33,7 @@ public class MatchReport {
 
     static MatchReport build(String points) {
         MatchReport matchReport = new MatchReport();
-
-        for (int i = 0; i < points.length(); i++) {
-            char scorer = points.charAt(i);
-            matchReport.scorePointFor(scorer);
-        }
-
+        points.chars().forEach(scorer -> matchReport.scorePointFor((char) scorer));
         return matchReport;
     }
 
