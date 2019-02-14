@@ -1,4 +1,4 @@
-package tech.dimas.cfive;
+package tech.dimas.tennis;
 
 public class App {
     public static void main(String[] args) {

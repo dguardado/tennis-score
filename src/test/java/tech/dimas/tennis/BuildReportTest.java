@@ -1,4 +1,4 @@
-package tech.dimas.cfive;
+package tech.dimas.tennis;
 
 import org.junit.jupiter.api.Test;
 

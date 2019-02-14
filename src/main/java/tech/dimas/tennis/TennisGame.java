@@ -1,4 +1,4 @@
-package tech.dimas.cfive;
+package tech.dimas.tennis;
 
 public class TennisGame {
     public static MatchReport buildReport(String points) {
