@@ -68,8 +68,8 @@ public class Player {
     @Override
     public String toString() {
         return "Player{" +
-                "score=" + score +
-                ", games=" + games +
+                "score=" + getScore() +
+                ", games=" + getGames() +
                 '}';
     }
 }
