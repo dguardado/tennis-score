@@ -17,14 +17,15 @@ public class MatchReport {
 
    private void scorePointFor(char scorer) {
         if (scorer == 'A') {
-            scorePoint(playerA, playerB);
+            recordPoint(playerA, playerB);
         } else {
-            scorePoint(playerB, playerA);
+            recordPoint(playerB, playerA);
         }
     }
 
-    private static void scorePoint(Player scorer, Player opponent) {
+    private static void recordPoint(Player scorer, Player opponent) {
         scorer.scoreOn(opponent);
+        opponent.getScoredOnBy(scorer);
         if (scorer.hasWonGame()) {
             scorer.win();
             opponent.lose();

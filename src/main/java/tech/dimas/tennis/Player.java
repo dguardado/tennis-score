@@ -24,7 +24,10 @@ public class Player {
     void scoreOn(Player opponent) {
         score++;
         lead = score - opponent.score;
-        opponent.lead = -lead;
+    }
+
+    void getScoredOnBy(Player scorer) {
+        lead = score - scorer.score;
     }
 
     public boolean hasWonGame() {
